@@ -50,7 +50,6 @@ public class TriangleTest {
     public void getTypeOfTriangle_InputThreePoints_ReturnEquilateralTriangle() {
         Point a = new Point(-1, 0), b = new Point(1,0), c = new Point(0, Math.sqrt(3));
         Triangle triangle = new Triangle(a, b, c);
-        String res = triangle.getTypeOfTriangle();
         assertEquals(Triangle.EQUILATERAL_TRIANGLE, triangle.getTypeOfTriangle());
     }
 
